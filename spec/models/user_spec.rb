@@ -29,7 +29,6 @@ describe User do
 
     describe "when not present" do
       before { @user.email = " " }
-      pry
       it { should_not be_valid }
     end
 
