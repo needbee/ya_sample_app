@@ -18,6 +18,11 @@ describe "StaticPages" do
 
   describe "Help page" do
 
+    it "should have the right title" do
+      visit "/static_pages/help"
+      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Help")
+    end
+
     it "should have the content 'Help'" do
       visit "/static_pages/help"
       expect(page).to have_content("Help")
