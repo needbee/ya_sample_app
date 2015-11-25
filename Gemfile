@@ -8,6 +8,7 @@ gem 'sprockets', '2.11.0'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
+  gem 'pry'
 end
 
 group :test do
